@@ -6,7 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
 def get_retriever() -> VectorStoreRetriever:
-    knowledge_dir: str = './knowledge/'
+    knowledge_dir: str = '../resources/knowledge/'
     loader = DirectoryLoader(knowledge_dir + 'in')
     documents = loader.load()
     embeddings = OllamaEmbeddings(model='nomic-embed-text')
