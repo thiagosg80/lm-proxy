@@ -1,3 +1,4 @@
 .idea/
 .venv/
-lm-proxy/resources/knowledge/out/
+**/knowledge/out/
+**/__pycache__/
